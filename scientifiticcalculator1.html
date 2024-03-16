@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .parent{
+            width: 300px;
+            height: 500px;
+            background-color: rgb(157, 151, 151);
+            border-radius: 20px;
+            border: 5px solid black;
+            border-right: 10px solid black;
+            border-bottom: 10px solid black;
+            text-align: center;
+        }
+        .input{
+            width: 260px;
+            height: 40px;
+            background-color: black;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            border-radius: 5px;
+        }
+        #inp{
+            width: 95%;
+            height: 80%;
+            background-color: wheat;
+            font-size: 20px;
+            text-align: right;
+            border-radius: 5px;
+        }
+        .buttons{
+            position: relative;
+            top: 20px;
+        }
+        .b1{
+            width: 40px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+            margin: 3.5px;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>SCIENTIFIC CALCULATOR</h1>
+    <div class="parent">
+          <div class="input">
+                 <input type="text" placeholder="0" id="inp">
+          </div>
+          <div class="buttons">
+                 <p>
+                    <input type="button" value="sin" class="b1 btn">
+                    <input type="button" value="cos" class="b1 btn">
+                    <input type="button" value="Tan" class="b1 btn">
+                    <input type="button" value="asin" class="b1 btn">
+                    <input type="button" value="acos" class="b1 btn">
+                 </p>
+                 <p>
+                    <input type="button" value="aTan" class="b1 btn">
+                    <input type="button" value="π" class="b1 btn">
+                    <input type="button" value="log" class="b1 btn">
+                    <input type="button" value="ln" class="b1 btn">
+                    <input type="button" value="%" class="b1 btn">
+                 </p>
+                 <p>
+                    <input type="button" value="x²" class="b1 btn">
+                    <input type="button" value="x3" class="b1 btn">
+                    <input type="button" value="√" class="b1 btn">
+                    <input type="button" value="(" class="b1 btn">
+                    <input type="button" value=")" class="b1 btn">
+                 </p>
+                 <p style="margin-top: 40px;">
+                    <input type="button" value="7" class="b1">
+                    <input type="button" value="8" class="b1">
+                    <input type="button" value="9" class="b1">
+                    <input type="button" value="Del" class="b1 red">
+                    <input type="button" value="C" class="b1 red">
+                 </p>
+                 <p>
+                    <input type="button" value="4" class="b1">
+                    <input type="button" value="5" class="b1">
+                    <input type="button" value="6" class="b1">
+                    <input type="button" value="x" class="b1">
+                    <input type="button" value="/" class="b1">
+                 </p>
+                 <p>
+                    <input type="button" value="1" class="b1">
+                    <input type="button" value="2" class="b1">
+                    <input type="button" value="3" class="b1">
+                    <input type="button" value="+" class="b1">
+                    <input type="button" value="-" class="b1">
+                 </p>
+                 <p>
+                    <input type="button" value="0" class="b1">
+                    <input type="button" value="±" class="b1">
+                    <input type="button" value="." class="b1">
+                    <input type="button" value="Exp" class="b1">
+                    <input type="button" value="=" class="b1">
+                 </p>
+          </div>
+    </div>
+    <script>
+        let inp1=document.getElementById("inp")
+        function call(data){
+            inp1.value+=data;
+        }
+        function evaluate1{
+            inp1.value=eval(input1.value)
+        }
+        function delete1(){
+            inp1.value=inp1.substring(0,inp1.value.length-1)
+        }
+        function clear1(){
+            inp1.value=""
+        }
+        function sine1(){
+        }
+    </script>
+</body>
+</html>
